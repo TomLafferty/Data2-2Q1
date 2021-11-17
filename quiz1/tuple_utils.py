@@ -13,7 +13,10 @@ def tic_tac_toe_finish(board: TicTacToeBoard, pos_y: int, pos_x: int, symbol: st
     :param symbol: The symbol that should be placed in the column (X, or O)
     :return: None
     """
-    pass  # remove pass statement and implement me
+    pick_row = board[pos_y]
+    pick_row[pos_x] = symbol
+
+    # pass  # remove pass statement and implement me
 
 
 def count_things(collection: Tuple, thing: Union[int, str]) -> int:
@@ -23,11 +26,15 @@ def count_things(collection: Tuple, thing: Union[int, str]) -> int:
     :param thing: An item in the collection parameter
     :return: An integer.
     """
-    pass  # remove pass statement and implement me
+    return collection.count(thing)
+
+    # pass  # remove pass statement and implement me
 
 
 def produce_tuple(alist: List) -> Tuple:
     """
     Produce a specific tuple.
     """
-    pass # remove pass statement and implement me
+    return tuple(alist)
+
+    # pass # remove pass statement and implement me
