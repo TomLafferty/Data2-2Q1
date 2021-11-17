@@ -4,4 +4,11 @@ def palindrome(value: str) -> bool:
     :param value: A string
     :return: A boolean
     """
-    pass  # remove pass statement and implement me
+    lowered = value.lower()
+    base = lowered.replace(" ", "")
+    if base[::-1] == base:
+        return True
+    else:
+        return False
+
+    # pass  # remove pass statement and implement me
